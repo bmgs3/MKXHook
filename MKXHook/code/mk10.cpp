@@ -190,6 +190,7 @@ void __fastcall MK10Hooks::HookProcessStuff()
 		if (TheMenu->m_bNoHealthP2)	p2->SetLife(0.0f);
 		if (TheMenu->m_bOneHealthP2)	p2->SetLife(0.01f);
 		if (TheMenu->m_bInfiniteMeterP2) p2_info->SetMeter(1.0f);
+		if (TheMenu->m_bZeroMeterP2) p2_info->SetMeter(0.0f);
 		if (TheMenu->m_bDisableHeadTracking) p2->KillHeadTracking();
 		if (TheMenu->m_bInfiniteRunP2) p2_info->SetEnergy(100.0f);
 		if (TheMenu->m_bNoRunP2) p2_info->SetEnergy(0.0f);
